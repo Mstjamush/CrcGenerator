@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <!--comment>Daemon operation settings.</comment-->
+    <entry key="POI">01</entry>
+    <entry key="POI_LENGTH">01</entry>
+    
+    <entry key="UNPROCESSED_STATUS">0</entry>
+    <entry key="PROCESSED_STATUS">1</entry>
+    <entry key="FAILED_STATUS">505</entry>    
+    <entry key="MIN_RUN_ID">51</entry>
+    <entry key="MAX_MEM_CAPACITY">500</entry>
+    <entry key="MAX_RUN_ID">254</entry>
+    <entry key="NUM_OF_CHILDREN">20</entry>
+    <entry key="MAX_NUMBER_OF_SENDS">5</entry>
+    <entry key="CURRENT_RUN_AT_STARTUP">51</entry>    	
+
+    <!--comment>Logging related settings.</comment-->
+    <entry key="INFO_LOG_LEVEL">INFO</entry>
+    <entry key="ERROR_LOG_LEVEL">ERROR</entry>
+    <entry key="INFO_LOG_FILE">/data/log/applications/MB/daemons/wallet/development/ExternalTransactionPusher/ExternalTransactionPusherInfo.log</entry>
+    <entry key="ERROR_LOG_FILE">/data/log/applications/MB/daemons/wallet/development/ExternalTransactionPusher/ExternalTransactionPusherError.log</entry>
+    <entry key="MAX_LOGFILE_SIZE">100MB</entry>
+    <entry key="MAX_LOGFILE_NUMBER">10</entry>
+
+    <!--comment> Database Related settings. </comment-->
+    <entry key="DB_POOL_NAME">ExternalTransactionPusher</entry>
+    <entry key="DB_POOL_SIZE">10</entry>
+    <entry key="DB_USER_NAME">root</entry>
+    <entry key="DB_PASSWORD">r00t</entry>
+    <entry key="DB_HOST">localhost</entry>
+    <entry key="DB_PORT">3306</entry>
+    <entry key="DB_NAME">wallet_mb</entry>
+
+    <!--
+          Put the time between the lapses. ie 
+            for the first 3 retries | next 3 retries | for substequent retries.         
+    -->
+    <entry key="NEXT_EARLIEST_TIME_TO_RESEND">1|5|10</entry>
+    
+    <!--comment>Properties specific to external transactions pusher.</comment-->
+    <entry key="MAXIMUM_BATCH_SIZE">20</entry>
+    <entry key="BEEP_SERVICEIDS">14,18,19,82,200</entry>
+    
+    <entry key="SERVICE_RESULTS_URL">http://localhost/MB/wallet/Service_APIs/ResultsAPI</entry>
+    
+    <entry key="API_USER_NAME">SandraAPI</entry>
+    <!--    <entry key="API_PASSWORD"></entry>-->
+    <entry key="API_PASSWORD">!23qweASD</entry>
+    <entry key="HUB_FINAL_STATUS_CODES">108,109,110,111,112</entry>
+    <entry key="MERCHANT_ID_SERVICE_ID_MAPPING">14:15,19:14,82:15</entry>
+
+    <!--<entry key="BEEP_API_USER_NAME">dtb_test_api_user</entry>
+    <entry key="BEEP_API_PASSWORD">dtb_12345</entry>-->
+    <entry key="BEEP_API_USER_NAME">dtb_test_api_user</entry>
+    <entry key="BEEP_API_PASSWORD">!23qweASD</entry>
+    <entry key="COLLECTOR_ID"></entry>
+    <entry key="BEEP_FINAL_STATUS_CODES">132,104,106,109,110,111,115,120,146,167,174,231,232</entry>
+    <entry key="HUB_AUTHENTICATION_SUCCESS_STATUS">131</entry>
+    
+    
+    <!-- MasterCard Configs -->
+        <entry key="MASTERCARD_SERVICEID">209</entry>
+        <entry key="MASTERCARD_CITY">NAIROBI</entry>
+        <entry key="MASTERCARD_COUNTRY">KEN</entry>
+        <entry key="MASTERCARD_FundingSource">05</entry>
+        <entry key="MASTERCARD_Currency">404</entry>
+        <entry key="MASTERCARD_ICA">009674</entry>
+        <entry key="MASTERCARD_ProcessorId">9000000442</entry>
+        <entry key="MASTERCARD_RoutingAndTransitNumber">990442082</entry>       
+        <entry key="MASTERCARD_BANK">Diamond Trust Bank</entry>
+
+    <!-- MasterCard Security -->   
+       <entry key="consumerKey">tWQKM16Mnz5IgxI5j0XTXBP-rAKm9HyA6nnRdQZqe6cb90d9!36e7503bf6c146cc98aeed571d31319f0000000000000000</entry>
+       <entry key="keyAlias">keyalias</entry>
+       <entry key="keyPassword">keystorepassword</entry>
+       <entry key="cert">DTB_MasterPass_sandbox.p12</entry>
+       
+</properties>
